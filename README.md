@@ -35,11 +35,12 @@ fs.readFileSync('./string.txt').toString().split("\n");
 이걸 module.exports 에서 보냄
 </h5>
 
-
+<pre>
 <code>
 for(let i = 0; i < word.length; i++){<br>
   const len  = word[i].trim().split(""+(i+1))[1].trim()
 </code>
+</pre>
 <br>
 <h5>
 여기서 for문으로 word 길이만큼 돌려버리고
@@ -47,10 +48,13 @@ for(let i = 0; i < word.length; i++){<br>
 </h5>
 <br>
 
+
+<pre>
 <code>
 const en = len.replace( /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣|~|,]/g, '' )<br>
     const ko = len.replace( /[a-z]/gi, '' )
 </code>
+</pre>
 <br>
 <h5>
 정규표현식으로 한글제거 , 영어제거 해줘서 변수에 넣어줌
