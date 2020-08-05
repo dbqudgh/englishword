@@ -37,7 +37,7 @@ fs.readFileSync('./string.txt').toString().split("\n");
 
 
 <code>
-for(let i = 0; i < word.length; i++){
+for(let i = 0; i < word.length; i++){<br>
   const len  = word[i].trim().split(""+(i+1))[1].trim()
 </code>
 <br>
@@ -48,13 +48,18 @@ for(let i = 0; i < word.length; i++){
 <br>
 
 <code>
-const en = len.replace( /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣|~|,]/g, '' )
+const en = len.replace( /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣|~|,]/g, '' )<br>
     const ko = len.replace( /[a-z]/gi, '' )
 </code>
 <br>
 <h5>
 정규표현식으로 한글제거 , 영어제거 해줘서 변수에 넣어줌
 </h5>
+
+<br><br><br>
+
+심심해서 짠 코드
+
 
 
 
